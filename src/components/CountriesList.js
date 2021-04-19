@@ -16,8 +16,8 @@ function CountriesList() {
                 className="list-group-item list-group-item-action "
               >
                 <img
-                  src={`https://www.countryflags.io/${country.cca2}/flat/64.png`}
-                  style={{ width: '25px' }}
+                  src={`https://www.countryflags.io/${country.cca2}/shiny/64.png`}
+                  style={{ width: '25px', marginRight: '.7rem' }}
                   alt=""/> {country.name.common}
               </Link>
             );

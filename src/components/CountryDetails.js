@@ -11,10 +11,10 @@ function CountryDetails(props) {
     <div class="col-7">
       <div className="d-flex">
           <img
-            src={`https://www.countryflags.io/${foundCountry.cca2}/flat/64.png`}
-            style={{ width: '45px' }}
+            src={`https://www.countryflags.io/${foundCountry.cca2}/shiny/64.png`}
+            style={{ width: '55px', height: '55px', marginRight: '1rem'}}
             alt=""
-          /> <h1>{foundCountry.name.common}</h1>  
+          />  <h1>{ foundCountry.name.common }</h1>  
           
       </div>
       <table class="table">
@@ -28,6 +28,12 @@ function CountryDetails(props) {
             <td>Area</td>
             <td>
               {foundCountry.area} km<sup>2</sup>
+            </td>
+          </tr>
+          <tr>
+            <td>Region</td>
+            <td>
+              {foundCountry.region} 
             </td>
           </tr>
           <tr>
